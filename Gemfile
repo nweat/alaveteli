@@ -70,7 +70,7 @@ group :test do
 end
 
 group :test, :development do
-  gem 'bullet', '~> 4.14.5'
+  gem 'bullet', '~> 4.14.5' unless RUBY_VERSION =~ /1.8/i
   gem 'factory_girl_rails', '~> 1.7'
   gem 'rack-insight', '~> 0.6.3'
   gem 'rspec-rails', '~> 2.13.2'

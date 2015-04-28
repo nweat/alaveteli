@@ -23,7 +23,6 @@ gem 'net-http-local', '~> 0.1.2', :platforms => [:ruby_18, :ruby_19]
 gem 'net-purge', '~> 0.1.0'
 gem 'open4', '~> 1.3.4'
 gem 'rack', '~> 1.4.5'
-gem 'rack-insight', '~> 0.6.2'
 gem 'rake', '0.9.2.2'
 gem 'rails-i18n', '~> 0.7.3'
 gem 'recaptcha', '~> 0.3.1', :require => 'recaptcha/rails'
@@ -73,6 +72,7 @@ end
 group :test, :development do
   gem 'bullet', '~> 4.14.5'
   gem 'factory_girl_rails', '~> 1.7'
+  gem 'rack-insight', '~> 0.6.3'
   gem 'rspec-rails', '~> 2.13.2'
   gem 'spork-rails', '~> 3.2.1'
 end

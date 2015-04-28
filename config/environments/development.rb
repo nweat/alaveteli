@@ -51,7 +51,8 @@ Alaveteli::Application.configure do
                                     Rack::Insight::App,
                                     :secret_key => AlaveteliConfiguration.rack_insight_secret_key,
                                     :database_path => AlaveteliConfiguration.rack_insight_database_path,
-                                    :ip_masks   => false
+                                    :password => nil,
+                                    :ip_masks => false
   end
 
   if AlaveteliConfiguration.use_bullet_in_development
